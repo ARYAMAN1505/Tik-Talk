@@ -35,7 +35,7 @@ const SignUp = () => {
                     </h1>
                     <br></br>
                     <h1 className='text-3xl font-semibold text-gray-300 mb-4'>
-                        Login
+                        Signup
                     </h1>
                 </div>
 
