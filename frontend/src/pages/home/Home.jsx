@@ -8,7 +8,9 @@ const Home = () => {
                 <Sidebar />
             </div>
             <div className="flex-1 overflow-y-auto bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 p-4">
-                <MessageContainer />
+                <div className="h-full">
+                    <MessageContainer />
+                </div>
             </div>
         </div>
     );
