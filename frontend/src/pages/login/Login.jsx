@@ -14,26 +14,20 @@ const Login = () => {
     };
 
     return (
-        <div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-            <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+        <div className='flex flex-col items-center justify-center min-h-screen'>
+            <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 md:w-96'>
                 <div className='text-center'>
                     <h1 className='text-3xl font-semibold text-gray-300'>
                         Tik-Talk
                     </h1>
-                         <h1 className='text-xl font-semibold text-gray-300 mb-4'>
-                        Where conersations sync like clockwork
-                    </h1>
-                    <br></br>
-                    <h1 className='text-3xl font-semibold text-gray-300 mb-4'>
-                        Login
+                    <h1 className='text-xl font-semibold text-gray-300 mb-4'>
+                        Where conversations sync like clockwork
                     </h1>
                 </div>
 
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label className='label p-2'>
-                            <span className='text-base label-text text-white'>Username</span>
-                        </label>
+                <form onSubmit={handleSubmit} className='w-full'>
+                    <div className='mb-4'>
+                        <label className='text-base label-text text-white'>Username</label>
                         <input
                             type='text'
                             placeholder='Enter username'
@@ -43,10 +37,8 @@ const Login = () => {
                         />
                     </div>
 
-                    <div>
-                        <label className='label'>
-                            <span className='text-base label-text text-white'>Password</span>
-                        </label>
+                    <div className='mb-4'>
+                        <label className='text-base label-text text-white'>Password</label>
                         <input
                             type='password'
                             placeholder='Enter Password'
@@ -55,15 +47,14 @@ const Login = () => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
+
                     <Link to='/signup' className='text-sm text-white hover:underline hover:text-blue-600 mt-2 inline-block'>
                         {"Don't"} have an account?
                     </Link>
 
-                    <div>
-                        <button className='btn btn-block btn-sm mt-2' disabled={loading}>
-                            {loading ? <span className='loading loading-spinner '></span> : "Login"}
-                        </button>
-                    </div>
+                    <button className='btn btn-block btn-sm mt-4' disabled={loading}>
+                        {loading ? <span className='loading loading-spinner'></span> : "Login"}
+                    </button>
                 </form>
 
                 <footer className='text-white text-center mt-4'>
@@ -73,4 +64,5 @@ const Login = () => {
         </div>
     );
 };
+
 export default Login;
