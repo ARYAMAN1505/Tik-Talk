@@ -26,16 +26,18 @@ const SignUp = () => {
     return (
         <div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
             <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
-                <h1 className='text-3xl font-semibold text-gray-300'>
-                    Chat App
-                </h1>
-                <h1 className='text-xl font-semibold text-gray-300 mb-4'>
-                    Where conversations sync like clockwork
-                </h1>
-                <br />
-                <h1 className='text-3xl font-semibold text-gray-300 mb-4'>
-                    Signup
-                </h1>
+                <div className='text-center'>
+                    <h1 className='text-3xl font-semibold text-gray-300'>
+                        Tik-Talk
+                    </h1>
+                         <h1 className='text-xl font-semibold text-gray-300 mb-4'>
+                        Where conersations sync like clockwork
+                    </h1>
+                    <br></br>
+                    <h1 className='text-3xl font-semibold text-gray-300 mb-4'>
+                        Login
+                    </h1>
+                </div>
 
                 <form onSubmit={handleSubmit}>
                     <div>
