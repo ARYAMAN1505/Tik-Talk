@@ -20,9 +20,13 @@ const Login = () => {
                     <h1 className='text-3xl font-semibold text-gray-300'>
                         Chat App
                     </h1>
-                    <h2 className='text-xl font-semibold text-gray-300 mb-4'>
+                         <h1 className='text-xl font-semibold text-gray-300 mb-4'>
+                        Where conersations sync like clockwork
+                    </h1>
+                    <br></br>
+                    <h1 className='text-xl font-semibold text-gray-300 mb-4'>
                         Login
-                    </h2>
+                    </h1>
                 </div>
 
                 <form onSubmit={handleSubmit}>
