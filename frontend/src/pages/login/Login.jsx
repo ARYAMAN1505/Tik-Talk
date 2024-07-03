@@ -18,7 +18,7 @@ const Login = () => {
             <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
                 <div className='text-center'>
                     <h1 className='text-3xl font-semibold text-gray-300'>
-                        Chat App
+                        Tik-Talk
                     </h1>
                          <h1 className='text-xl font-semibold text-gray-300 mb-4'>
                         Where conersations sync like clockwork
