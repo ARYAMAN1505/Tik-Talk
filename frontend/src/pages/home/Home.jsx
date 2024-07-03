@@ -7,7 +7,7 @@ const Home = () => {
             <div className="w-full md:w-3/8 h-full bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 p-4">
                 <Sidebar />
             </div>
-            <div className="w-full md:w-5/8 h-full overflow-y-auto bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 p-4">
+            <div className="flex-1 overflow-y-auto bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 p-4">
                 <MessageContainer />
             </div>
         </div>
